@@ -1,3 +1,14 @@
+/************************************************************
+For Range
+
+This is an example from working on this:
+https://www.udemy.com/googlego/learn/v4/content
+
+For ranges are the answer to going through an array!
+
+it is a pretty cool!
+************************************************************/
+
 package main
 
 import "fmt"

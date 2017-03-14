@@ -1,6 +1,9 @@
 /****************************************************************
 Loops
 
+This is an example from working on this:
+https://www.udemy.com/googlego/learn/v4/content
+
 Go only has one loop and that is for and I kinda like that
 
 ****************************************************************/
