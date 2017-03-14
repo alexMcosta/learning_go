@@ -1,6 +1,9 @@
 /***************************************************************
 Variadic Function
 
+This is an example from working on this:
+https://www.udemy.com/googlego/learn/v4/content
+
 I AM SUPER EXCITED ABOUT THIS! Almost to the point where this might be a hammmer(Refrence to everything being a nail).
 
 Variadic functions seem (I will use seem about everything until I know it as a fact) that they are functions that can take more then one input by creating a slice and filling it by the given variable
