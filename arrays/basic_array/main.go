@@ -11,9 +11,9 @@ package main
 
 import "fmt"
 
-const g_cap int = 5 // Total compacity of grocery list
+const g_cap int = 5 // Total compacity of grocery list array
 
-var g_groceries [g_cap]string
+var g_groceries [g_cap]string //Initializing the grocery array
 var g_len int = 0
 
 func add_grocery(a string) {
