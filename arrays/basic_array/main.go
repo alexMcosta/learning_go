@@ -1,3 +1,12 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BASIC ARRAY
+
+This example is from taking the online course located here:
+https://www.udemy.com/googlego/learn/v4/content
+
+ What I got form this:
+ Arrays are fixed... That is basically all I really got from it and will most likely be building with slices when creating things in Go.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package main
 
 import "fmt"
