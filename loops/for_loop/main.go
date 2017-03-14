@@ -1,10 +1,3 @@
-/****************************************************************
-Loops
-
-Go only has one loop and that is for and I kinda like that
-
-****************************************************************/
-
 package main
 
 import "fmt"
