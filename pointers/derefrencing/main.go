@@ -1,5 +1,5 @@
 /**************************************************************
-Pointer refrencing
+Pointer derefrencing
 **************************************************************/
 
 package main
@@ -17,5 +17,8 @@ func main() {
 	var b *int = &a
 
 	fmt.Println(b)
+
+	//By applying the asterisk to 'b' it is stating "Give me the value of 'b' and not the location"
+	fmt.Println(*b) // Derefrencing
 
 }
