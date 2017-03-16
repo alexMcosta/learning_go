@@ -29,7 +29,9 @@ func add_grocery(a ...string) {
 func list_groceries() {
 	fmt.Println("Grocery list as follows:")
 
-	// _ lets us throw away the counter
+	// A For range is built like this:
+	// for INDEX, VALUE := range SLICE
+	// _ lets us throw away the index
 	for _, d := range g_groceries {
 		fmt.Println(d)
 	}
