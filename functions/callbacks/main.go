@@ -9,14 +9,10 @@ func visit(numbers []int, callback func(int)) {
 	}
 }
 
-func add_two(n int) {
-	fmt.Println(n + 2)
-}
-
 func main() {
 	visit([]int{1, 2, 3, 4}, func(n int) {
 		fmt.Println(n)
 	})
 	//NO WORK
-	//visit([]int{1, 2, 3, 4}, add_two(n int))
+	//visit([]int{1, 2, 3, 4}, pre_existing_function(n int))
 }
