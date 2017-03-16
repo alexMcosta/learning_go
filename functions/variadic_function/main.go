@@ -35,6 +35,9 @@ func list_groceries() {
 	for _, d := range g_groceries {
 		fmt.Println(d)
 	}
+
+	//This is a variadic argument: example(slice...)
+	//This means it will take a slice and insert each index through the function
 }
 
 func main() {
