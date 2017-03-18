@@ -3,10 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	myGreeting := map[string]string{
-		"Nicholas": "Hi!",
-		"Kyle":     "cookie?",
-	}
+	myGreeting := map[string]string{}
 
 	myGreeting["Alex"] = "hello"
 	myGreeting["Corey"] = "howdey"
