@@ -10,6 +10,10 @@ type coworker struct {
 }
 
 //This is the method
+// person makes the variable of the struct
+//coworker is the struct
+// fullName is the name of the method
+// string is the output
 func (person coworker) fullName() string {
 	return person.firstname + person.lastame
 }
