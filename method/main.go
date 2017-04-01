@@ -21,7 +21,7 @@ func (person coworker) fullName() string {
 func main() {
 	corey := coworker{"Corey", "Wellington", 28, true}
 	nicholas := coworker{"Nick", "Parker", 37, true}
-	sam := coworker{"Sam", "Matthews", 34, false}
+	sam := coworker{}
 	kyle := coworker{"Kyle", "Fletcher", 30, false}
 	chris := coworker{"Chris", "Packer", 29, false}
 	matt := coworker{"Matt", "Stint", 29, false}
