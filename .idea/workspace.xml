@@ -27,10 +27,10 @@
       <file leaf-file-name="wiki.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/gowiki/wiki.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="19" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
-                <element signature="e#14#44#0" expanded="true" />
+                <element signature="e#14#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +57,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="20" />
     <option name="y" value="43" />
     <option name="width" value="1400" />
@@ -147,7 +147,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="767" extended-state="0" />
+    <frame x="20" y="43" width="1400" height="767" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26141384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -216,10 +216,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/gowiki/wiki.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#14#44#0" expanded="true" />
+            <element signature="e#14#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
