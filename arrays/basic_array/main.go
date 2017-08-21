@@ -40,5 +40,4 @@ func main() {
 	add_grocery("soap")
 	add_grocery("milk")
 	list_groceries()
-
 }
