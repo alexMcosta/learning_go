@@ -15,3 +15,8 @@ func meow()
 
 ```
 
+### Exported / Unexported
+
+In a package uppercase functions/variables are visible outside of the package
+but lowercase functions/variables are not visible outside of the package.
+
