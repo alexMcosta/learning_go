@@ -14,5 +14,5 @@ func main() {
 
 //GenerateQRCode will be the function that generates the QR Code
 func GenerateQRCode(code string) []byte {
-	return nil
+	return []byte{0xFF}
 }
