@@ -52,10 +52,15 @@ func main() {
 			"Sons":      1,
 			"Pets":      0,
 		},
+		"Denice": map[string]int{
+			"Daughters": 0,
+			"Sons":      0,
+			"Pets":      3,
+		},
 	}
 
-	fmt.Println(myFamily)
-	fmt.Println(myFamily["Teddy"])
+	//fmt.Println(myFamily)
+	//fmt.Println(myFamily["Teddy"])
 	fmt.Println(myFamily["Teddy"]["Sons"])
 
 }
