@@ -4,26 +4,43 @@ import "fmt"
 
 //OOP in Go is the use of structs which are not
 // Objects but a new type
-type coworker struct {
+type Coworker struct {
 	firstname string
-	lastame   string
+	lastname  string
 	age       int
 	developer bool
 }
 
 //Methods in in go are like so
-func (p coworker) fullname() string {
-	return p.firstname + " " + p.lastame
+func (p Coworker) fullname() string {
+	return p.firstname + " " + p.lastname
+}
+
+//Inheritance
+type CurrentCoworker struct {
+	Coworker
+	Current bool
 }
 
 func main() {
-	corey := coworker{"Corey", "Wellington", 28, true}
-	nicholas := coworker{"Nick", "Parker", 37, true}
-	sam := coworker{"Sam", "Matthews", 34, false}
-	kyle := coworker{"Kyle", "Fletcher", 30, false}
-	chris := coworker{"Chris", "Packer", 29, false}
-	matt := coworker{"Matt", "Stint", 29, false}
-	packer := coworker{chris.lastame, nicholas.lastame, corey.age, matt.developer}
+	corey := Coworker{"Corey", "Wellington", 28, true}
+	nicholas := Coworker{"Nick", "Parker", 37, true}
+	sam := Coworker{"Sam", "Matthews", 34, false}
+	kyle := Coworker{"Kyle", "Fletcher", 30, false}
+	chris := Coworker{"Chris", "Packer", 29, false}
+	matt := Coworker{"Matt", "Stint", 29, false}
+	packer := Coworker{chris.lastname, nicholas.lastname, corey.age, matt.developer}
 
-	fmt.Println(corey.firstname, nicholas.lastame, sam.age, kyle.developer, packer, corey.fullname())
+	//Creating a struct that has inheritance
+	eb := CurrentCoworker{
+		Coworker: Coworker{
+			firstname: "Elizabeth",
+			lastname:  "Bye",
+			age:       50,
+			developer: false,
+		},
+		Current: false,
+	}
+
+	fmt.Println(corey.firstname, nicholas.lastname, sam.age, kyle.developer, packer, corey.fullname(), eb.firstname, eb.Current)
 }
