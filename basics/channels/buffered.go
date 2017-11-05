@@ -12,6 +12,8 @@ func main() {
 		for i := 0; i < 10; i++ {
 			channel <- i
 		}
+		//When a channel is closed it can not take anymore input
+		//But it can still send its data.
 		close(channel)
 	}()
 
