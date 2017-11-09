@@ -10,7 +10,7 @@ import (
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(Template.New("").Funcs(fm).ParseFiles("tpl.gohtml"))
+	tpl = template.Must(template.New("").Funcs(fm).ParseFiles("tpl.gohtml"))
 }
 
 func monthDayYear(t time.Time) string {
