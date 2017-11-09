@@ -15,8 +15,9 @@ func init() {
 func main() {
 
 	//Slice we are sending to the template
+	friends := []string{"Tessa", "Corey", "Nicholas", "Squeek", "Kyle", "Jake"}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", 42)
+	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", friends)
 	if err != nil {
 		log.Fatalln(err)
 	}
