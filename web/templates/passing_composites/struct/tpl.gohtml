@@ -6,15 +6,7 @@
     </head>
     <body>
         <ul>
-            {{range .}}
-            <li>{{.}}</li>
-            {{end}}
-            <!-- 
-            You can also use variable to show the index and the element like so
-            -->
-            {{range $index, $element := .}}
-            <li>{{$index}} - {{$element}}</li>
-            {{end}}
+            <li>{{.Name}} - {{.Species}}</li>
         </ul>
     </body>
 </html>
