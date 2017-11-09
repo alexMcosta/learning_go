@@ -22,6 +22,7 @@ var fm = template.FuncMap{
 
 func main() {
 
+	//This is called chaining
 	tpl = template.Must(template.New("").Funcs(fm).ParseFiles("tpl.gohtml"))
 
 	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", time.Now())
