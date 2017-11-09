@@ -13,7 +13,10 @@ func init() {
 }
 
 func main() {
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", "Cats!")
+
+	//Slice we are sending to the template
+
+	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", 42)
 	if err != nil {
 		log.Fatalln(err)
 	}
