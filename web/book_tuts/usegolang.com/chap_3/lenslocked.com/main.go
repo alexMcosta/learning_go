@@ -22,8 +22,15 @@ func faq(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "<h1>This is the FAQ page!</h1>")
 }
 
+func catchAll(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	fmt.Fprint(w, "<h1>No Page exists</h1>")
+}
+
 func main() {
+	var h http.Handler = http.HandlerFunc(catchAll)
 	r := mux.NewRouter()
+	r.NotFoundHandler = h
 	r.HandleFunc("/", home)
 	r.HandleFunc("/contact", contact)
 	r.HandleFunc("/faq", faq)
