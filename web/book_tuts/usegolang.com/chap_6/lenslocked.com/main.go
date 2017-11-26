@@ -1,5 +1,7 @@
 package main
 
+//Left off at 6.3.2 Creating a view type
+
 import (
 	"fmt"
 	"html/template"
