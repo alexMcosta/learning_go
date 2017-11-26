@@ -13,7 +13,7 @@ func main() {
 
 	data := struct {
 		Name string
-	}{"Alex Costa"}
+	}{"<script>alert('howdy!');</script>"}
 
 	err = t.Execute(os.Stdout, data)
 	if err != nil {
