@@ -12,8 +12,13 @@ func main() {
 	}
 
 	data := struct {
-		Name string
-	}{"<script>alert('howdy!');</script>"}
+		Name    string
+		Age     int
+		Sisters []string
+	}{
+		"Alex Costa",
+		29,
+		[]string{"Ashley", "Natalie", "Hollishia"}}
 
 	err = t.Execute(os.Stdout, data)
 	if err != nil {

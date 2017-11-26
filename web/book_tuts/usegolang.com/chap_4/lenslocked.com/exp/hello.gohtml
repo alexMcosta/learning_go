@@ -1,1 +1,8 @@
 <h1>Hello {{.Name}}</h1>
+<h2>My Age is {{.Age}}</h2>
+<h2>My sisters are:</h2>
+<ul>
+    {{range .Sisters}}
+    <li>{{.}}</li>
+    {{end}}
+</ul>
