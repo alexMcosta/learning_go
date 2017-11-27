@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 
 	//This is what happens when you keeps all your notes and tuts in a centralized directory
@@ -13,6 +12,7 @@ import (
 var homeView *views.View
 var contactView *views.View
 var faqView *views.View
+var catchAllView *views.View
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
@@ -31,7 +31,7 @@ func faq(w http.ResponseWriter, r *http.Request) {
 
 func catchAll(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "<h1>404 This Page Does Not exist</h1>")
+	must(catchAllView.Render(w, nil))
 }
 
 func must(err error) {
@@ -45,6 +45,7 @@ func main() {
 	homeView = views.NewView("bootstrap", "views/home.gohtml")
 	contactView = views.NewView("bootstap", "views/contact.gohtml")
 	faqView = views.NewView("bootstrap", "views/faq.gohtml")
+	catchAllView = views.NewView("bootstrap", "views/catchall.gohtml")
 
 	var h http.Handler = http.HandlerFunc(catchAll)
 	r := mux.NewRouter()
