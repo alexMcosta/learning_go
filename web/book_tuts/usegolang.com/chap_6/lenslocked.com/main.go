@@ -12,6 +12,7 @@ import (
 
 var homeView *views.View
 var contactView *views.View
+var faqView *views.View
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
@@ -25,12 +26,12 @@ func contact(w http.ResponseWriter, e *http.Request) {
 
 func faq(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "<h1>This is the FAQ page!</h1>")
+	must(faqView.Render(w, nil))
 }
 
 func catchAll(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "<h1>No Page exists</h1>")
+	fmt.Fprint(w, "<h1>404 This Page Does Not exist</h1>")
 }
 
 func must(err error) {
@@ -42,7 +43,8 @@ func must(err error) {
 func main() {
 
 	homeView = views.NewView("bootstrap", "views/home.gohtml")
-	contactView = views.NewView("bootstrap", "views/contact.gohtml")
+	contactView = views.NewView("bootstap", "views/contact.gohtml")
+	faqView = views.NewView("bootstrap", "views/faq.gohtml")
 
 	var h http.Handler = http.HandlerFunc(catchAll)
 	r := mux.NewRouter()
