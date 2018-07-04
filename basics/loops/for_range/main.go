@@ -4,9 +4,9 @@ For Range
 This is an example from working on this:
 https://www.udemy.com/googlego/learn/v4/content
 
-For ranges are the answer to going through an array!
+For ranges are the answer to going through an array and is
+the answer for a foreach loop
 
-it is a pretty cool!
 ************************************************************/
 
 package main
