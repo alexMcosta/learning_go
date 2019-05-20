@@ -9,7 +9,7 @@ import (
 
 func TestRacer(t *testing.T) {
 	slowS := makeDelayedServer(20 * time.Millisecond)
-	fastS := makeDelayedServer(20 * time.Millisecond)
+	fastS := makeDelayedServer(0 * time.Millisecond)
 	defer slowS.Close()
 	defer fastS.Close()
 
